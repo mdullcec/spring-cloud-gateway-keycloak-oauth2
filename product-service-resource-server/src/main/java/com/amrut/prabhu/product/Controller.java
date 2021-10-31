@@ -10,7 +10,7 @@ import java.security.Principal;
 public class Controller {
 
     @GetMapping("/product")
-    @RolesAllowed({"product_read"})
+    @RolesAllowed({"READ_EMPLOYEE"})
     public String getProduct(Principal principal) {
         return "Response from Product Service, User Id:" + principal.getName();
     }

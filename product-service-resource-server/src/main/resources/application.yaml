@@ -3,10 +3,10 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          jwk-set-uri: http://localhost:8080/auth/realms/My-Realm/protocol/openid-connect/certs
+          jwk-set-uri: http://localhost:8080/auth/realms/dev/protocol/openid-connect/certs
 
 server:
-  port: 9191
+    port: 9191
 
 # Enable this for debugging
 #logging:
